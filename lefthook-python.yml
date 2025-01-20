@@ -4,9 +4,15 @@
 
 pre-commit:
   commands:
-      ruff-check:
-        glob: "*.py"
-        run: uvx run ruff check {staged_files}
+    ruff-check:
+      glob: "*.py"
+      run: uvx run ruff check {staged_files}
+    ruff-format:
+      glob: "*.py"
+      run: uvx ruff format --check {staged_files}
+    mypy:
+      glob: "*.py"
+      run: uvx mypy {staged_files}
       # - name: ruff-check
       #   glob: "*.py"
       #   run: uvx run ruff check {staged_files}
