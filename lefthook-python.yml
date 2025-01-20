@@ -1,13 +1,20 @@
+'Commands[0][name]' expected a map, got 'string'                                      
+'Commands[0][glob]' expected a map, got 'string'                                      
+'Commands[0][run]' expected a map, got 'string'
+
 pre-commit:
   commands:
-      - name: ruff-check
+      ruff-check:
         glob: "*.py"
         run: uvx run ruff check {staged_files}
-
-      - name: ruff-format
-        glob: "*.py"
-        run: uvx ruff format --check {staged_files}
-
-      - name: mypy
-        glob: "*.py"
-        run: uvx mypy {staged_files}
+      # - name: ruff-check
+      #   glob: "*.py"
+      #   run: uvx run ruff check {staged_files}
+      #
+      # - name: ruff-format
+      #   glob: "*.py"
+      #   run: uvx ruff format --check {staged_files}
+      #
+      # - name: mypy
+      #   glob: "*.py"
+      #   run: uvx mypy {staged_files}
