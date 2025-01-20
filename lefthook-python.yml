@@ -1,6 +1,6 @@
-'Commands[0][name]' expected a map, got 'string'                                      
-'Commands[0][glob]' expected a map, got 'string'                                      
-'Commands[0][run]' expected a map, got 'string'
+# 'Commands[0][name]' expected a map, got 'string'                                      
+# 'Commands[0][glob]' expected a map, got 'string'                                      
+# 'Commands[0][run]' expected a map, got 'string'
 
 pre-commit:
   commands:
